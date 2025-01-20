@@ -7,3 +7,32 @@
   font-weight: 400;
   font-style: normal;
 }
+/* common styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --orange-color: #FEA301;
+    --skyBlue-color: #01ACFD;
+    --black-color: #111111;
+    --white-color: #F7F7F7;
+    --fifth-color: #05D4DF;
+    --sixth-color: #5D58EF;
+    --seventh-color: #95B226;
+
+}
+body {
+    max-width: 1440px;
+    /* background-color: aquamarine; */
+}
+
+.content-width {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.none {
+    display: none;
+}
+
