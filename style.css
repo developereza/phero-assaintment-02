@@ -27,12 +27,12 @@
 body {
     max-width: 1440px;
     margin: 0 auto;  
-    border: 2px solid skyblue; 
+    /* border: 2px solid skyblue;  */
 }
 .container {
     max-width: 1160px;
     margin: 0 auto;    
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
 }
 .d-none {
     display: none;
@@ -369,7 +369,7 @@ footer {
 .footer-area {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 70px;
     padding-top: 120px;
     padding-left: 20px;
     padding-bottom: 60px;
@@ -396,15 +396,16 @@ footer {
     margin-top: 20px;
 }
 
-.footer-nav-title,
-.social-title {
+.footer-nav-title, .social-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--white-color);
     margin-bottom: 30px;
 }
 
-
+.footer-nav-items{
+    list-style: none;
+}
 
 .footer-nav-item {
     font-size: 1.25rem;
@@ -419,7 +420,120 @@ marquee{
     border-radius: 50px;
 }
 
+/* responsive   */
+@media screen and (max-width:576px) {
 
 
+    body {
+        max-width: 320px;
+    }
 
+    .menu-item, .nav-btn, .logo-title {
+        display: none;
+    }
 
+    .nav-area {
+        width: 356px;
+    }
+
+    .nav-icon {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .mobile-device {
+        display: block;
+        width: 340px;
+    }
+
+    /* banner mobile version */
+
+    .banner-area {
+        width: 357px;
+        height: 725px;
+        flex-direction: column-reverse;
+        /* margin-left: 30px; */
+        text-align: center;
+    }
+
+    .banner-info {
+        width: 280px;
+        height: 252px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        margin: 0px;
+    }
+
+    .banner-image img {
+        width: 80%;
+    }
+
+    /* main section responsive */
+
+    .standard-area {
+        margin-top: 150px;
+        max-width: 320px;
+        margin-bottom: 20px;
+    }
+
+    .card-area {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-left: 10px;
+    }
+
+    #card-1,
+    #card-2,
+    #card-3 {
+        width: 310px;
+        height: 440px;
+    }
+
+    .arrow-area {
+        display: none;
+    }
+
+    /* stories section responsive */
+
+    .stories-area-content {
+        max-width: 356px;
+    }
+
+    .stories-area {
+        max-width: 356px;
+    }
+
+    .big-card {
+        display: none;
+    }
+
+    .small-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin-left: 15px;
+        /* margin-left: 25px; */
+
+    }
+
+    .stories-area {
+        width: 356px;
+    }
+
+    .stories-btn {
+        margin-left: 80px;
+        width: 150px;
+        height: 40px;
+    }
+
+    /* footer responsive */
+    .footer-area {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 356px;
+    }
+
+    .footer-info-container, .footer-nav, .social-info {
+        max-width: 300px;
+      }
+}
