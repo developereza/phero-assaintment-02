@@ -218,19 +218,19 @@ body {
     margin-bottom: 100px;
 }
 
-.ball {
+.arrow {
     margin-top: 60px;
     margin-right: 10px;
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    background: rgb(254, 163, 1);
+    background: var(--orange-color);
 
 }
 
 .fa-less-than,
 .fa-greater-than {
-    color: white;
+    color: var(--white-color);
     margin: 20px;
     font-size: 1.4rem;
     font-weight: 700px;
@@ -266,7 +266,7 @@ body {
     width: 540px;
     height: 630px;
     border-radius: 16px;
-    background: rgb(255, 255, 255);
+    background: var(--white-color);
 }
 
 .big-card-title {
@@ -297,8 +297,8 @@ body {
     font-weight: 600;
     border: none;
     border-radius: 47.93px;
-    background: rgb(60, 216, 232);
-    color: white;
+    background: var(--fifth-color);
+    color: var(--white-color);
     z-index: 2;
     position: relative;
     top: -30px;
@@ -315,7 +315,7 @@ body {
     width: 290.69px;
     height: 301.61px;
     border-radius: 16px;
-    background: rgb(255, 255, 255);
+    background: var(--white-color);
 }
 
 .small-card-img img {
@@ -330,8 +330,8 @@ body {
     font-weight: 600;
     border: none;
     border-radius: 47.93px;
-    background: #95B226;
-    color: white;
+    background: var(--sixth-color);
+    color: var(--white-color);
     z-index: 2;
     position: relative;
     top: -27px;
@@ -348,15 +348,71 @@ body {
     height: 50px;
     border: none;
     border-radius: 12px;
-    color: white;
+    color: var(--white-color);
     font-size: 1.25rem;
     font-weight: 600;
-    background: #111111;
+    background:var(--black-color);
     margin-left: 600px;
     margin-top: 80px;
     margin-bottom: 60px;
 
 }
+/* footer section styles */
+
+
+footer {
+    background-color: var(--skyBlue-color);
+
+}
+
+.footer-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+}
+
+.footer-info-container {
+    width: 400px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.footer-description {
+    font-size: 1.25rem;
+    color: var(--white-color);
+    margin-top: 20px;
+}
+
+.footer-nav-title,
+.social-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+
+
+
+.footer-nav-item {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-bottom: 5px;
+}
+
+
 
 
 
